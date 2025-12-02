@@ -1,8 +1,9 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KalaiNova Tech - Full Website Mockup</title>
+    <title>KalaiNova Infotech - Full Website Mockup</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -60,6 +61,23 @@
         .mockup-header p {
             color: rgba(255, 255, 255, 0.7);
             font-size: 1.125rem;
+        }
+
+        .new-badge {
+            display: inline-block;
+            background: #10B981;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            margin-left: 0.5rem;
+            animation: pulse-badge 2s infinite;
+        }
+
+        @keyframes pulse-badge {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.8; transform: scale(1.05); }
         }
 
         .page-tabs {
@@ -380,6 +398,15 @@
             background: var(--bg-gray-50);
         }
 
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(0, 102, 255, 0.1), rgba(0, 217, 255, 0.05));
+            border-left: 4px solid var(--primary-blue);
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem auto;
+            max-width: 900px;
+        }
+
         .highlights-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -446,6 +473,17 @@
             color: var(--text-secondary);
             font-size: 0.9rem;
             margin-bottom: 1rem;
+        }
+
+        .program-details {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 2px solid var(--border-color);
+            font-size: 0.9rem;
+        }
+
+        .program-details strong {
+            color: var(--primary-blue);
         }
 
         .tech-tags {
@@ -746,14 +784,14 @@
 <body>
     <div class="mockup-container">
         <div class="mockup-header">
-            <h1>⚡ KalaiNova Tech Website Mockup</h1>
-            <p>Click tabs below to preview different pages</p>
+            <h1>⚡ KalaiNova Infotech<span class="new-badge">NEW 2025</span></h1>
+            <p>Complete Website Mockup - Click tabs below to preview all pages</p>
         </div>
 
         <div class="page-tabs">
             <button class="tab-btn active" onclick="showPage('home')">🏠 Home</button>
             <button class="tab-btn" onclick="showPage('about')">ℹ️ About</button>
-            <button class="tab-btn" onclick="showPage('internships')">🎓 Internships</button>
+            <button class="tab-btn" onclick="showPage('internships')">🎓 Programs</button>
             <button class="tab-btn" onclick="showPage('services')">💼 Services</button>
             <button class="tab-btn" onclick="showPage('verify')">🔐 Verify</button>
             <button class="tab-btn" onclick="showPage('contact')">📞 Contact</button>
@@ -766,7 +804,7 @@
                     <div class="dot yellow"></div>
                     <div class="dot green"></div>
                 </div>
-                <div class="browser-url">https://kalainovatech.in</div>
+                <div class="browser-url">https://kalainovainfotech.in</div>
             </div>
 
             <!-- HOME PAGE -->
@@ -775,12 +813,12 @@
                     <div class="container">
                         <div class="nav-brand">
                             <span class="brand-icon">⚡</span>
-                            <span class="brand-name">KalaiNova<span class="brand-accent">Tech</span></span>
+                            <span class="brand-name">KalaiNova<span class="brand-accent">Infotech</span></span>
                         </div>
                         <ul class="nav-menu">
                             <li><a href="#">Home</a></li>
                             <li><a href="#">About</a></li>
-                            <li><a href="#">Internships</a></li>
+                            <li><a href="#">Programs</a></li>
                             <li><a href="#">Services</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
@@ -794,30 +832,30 @@
                         <div class="hero-content">
                             <div class="hero-badge">
                                 <span class="badge-dot"></span>
-                                MSME Registered • Government Approved
+                                Newly Launched • MSME Registered • Now Enrolling First Batch
                             </div>
                             <h1 class="hero-title">
-                                Empowering Future <span class="gradient-text">Innovators</span> with Real-World Tech Experience
+                                Start Your <span class="gradient-text">Tech Career</span> with KalaiNova Infotech
                             </h1>
                             <p class="hero-subtitle">
-                                Master cutting-edge technologies through hands-on internships and professional training programs. Build your career with industry-relevant skills.
+                                A fresh start in IT education! We're a newly established, government-registered training company offering hands-on internships in Web Development, Python, Java, and more. Join our first batch of students today!
                             </p>
                             <div class="hero-cta">
-                                <a href="#" class="btn btn-primary">Apply for Internship</a>
-                                <a href="#" class="btn btn-secondary">View Services</a>
+                                <a href="#" class="btn btn-primary">View Programs</a>
+                                <a href="#" class="btn btn-secondary">Contact Us</a>
                             </div>
                             <div class="hero-stats">
                                 <div class="stat-item">
-                                    <div class="stat-number">500+</div>
-                                    <div class="stat-label">Students Trained</div>
+                                    <div class="stat-number">2025</div>
+                                    <div class="stat-label">Newly Established</div>
                                 </div>
                                 <div class="stat-item">
-                                    <div class="stat-number">15+</div>
-                                    <div class="stat-label">Tech Domains</div>
+                                    <div class="stat-number">8+</div>
+                                    <div class="stat-label">Tech Programs</div>
                                 </div>
                                 <div class="stat-item">
-                                    <div class="stat-number">100%</div>
-                                    <div class="stat-label">Certification</div>
+                                    <div class="stat-number">₹5-6K</div>
+                                    <div class="stat-label">Affordable Fees</div>
                                 </div>
                             </div>
                         </div>
@@ -827,12 +865,13 @@
                 <section class="about-section">
                     <div class="container">
                         <div class="section-header">
-                            <span class="section-tag">Who We Are</span>
-                            <h2 class="section-title">About KalaiNova Tech</h2>
+                            <span class="section-tag">Welcome</span>
+                            <h2 class="section-title">About KalaiNova Infotech</h2>
                         </div>
-                        <p style="text-align: center; max-width: 800px; margin: 0 auto; color: var(--text-secondary); line-height: 1.8;">
-                            KalaiNova Tech is a government-registered MSME (UDYAM) offering high-quality IT training, internships, and software development services. We focus on hands-on learning in modern technologies like web development, Python, Java, and cloud computing.
-                        </p>
+                        <div class="highlight-box">
+                            <p style="font-size: 1.125rem; margin-bottom: 1rem;"><strong>KalaiNova Infotech</strong> is a <strong>newly established, government-registered MSME company</strong> focused on providing quality IT training and internship programs.</p>
+                            <p style="color: var(--text-secondary);">We're starting fresh with a clear mission: make tech education accessible, practical, and affordable for everyone. Join us at the beginning and grow with us!</p>
+                        </div>
                     </div>
                 </section>
 
@@ -840,38 +879,38 @@
                     <div class="container">
                         <div class="section-header">
                             <span class="section-tag">Why Choose Us</span>
-                            <h2 class="section-title">Key Highlights</h2>
+                            <h2 class="section-title">What We Offer</h2>
                         </div>
                         <div class="highlights-grid">
                             <div class="highlight-card">
                                 <div class="highlight-icon">🎓</div>
-                                <h3>Registered MSME</h3>
-                                <p>Government-approved proprietorship with full legal compliance</p>
+                                <h3>Government Registered</h3>
+                                <p>Official MSME (UDYAM) registration with full legal authority to issue verified certificates</p>
                             </div>
                             <div class="highlight-card">
                                 <div class="highlight-icon">💼</div>
-                                <h3>Real-time Projects</h3>
-                                <p>Work on live industry projects and build a portfolio</p>
+                                <h3>Practical Training</h3>
+                                <p>Learn by doing real projects. Build your portfolio while learning industry-standard technologies</p>
                             </div>
                             <div class="highlight-card">
                                 <div class="highlight-icon">📜</div>
-                                <h3>Internship Certificates</h3>
-                                <p>Verified certificates recognized across the industry</p>
+                                <h3>Verified Certificates</h3>
+                                <p>Receive MSME-issued certificates that can be verified online by any employer</p>
                             </div>
                             <div class="highlight-card">
                                 <div class="highlight-icon">💰</div>
-                                <h3>Affordable Training</h3>
-                                <p>Quality education starting from ₹5,000</p>
+                                <h3>Student-Friendly Pricing</h3>
+                                <p>Complete programs for just ₹5,000-₹6,000. Quality education at affordable rates</p>
                             </div>
                             <div class="highlight-card">
                                 <div class="highlight-icon">👨‍🏫</div>
-                                <h3>Experienced Mentors</h3>
-                                <p>Learn from industry professionals</p>
+                                <h3>Expert Mentorship</h3>
+                                <p>Learn from experienced professionals with real-world industry knowledge</p>
                             </div>
                             <div class="highlight-card">
                                 <div class="highlight-icon">⚡</div>
-                                <h3>Modern Tech Stack</h3>
-                                <p>Latest technologies demanded by top companies</p>
+                                <h3>Latest Technologies</h3>
+                                <p>Training in current, in-demand technologies used by top tech companies</p>
                             </div>
                         </div>
                     </div>
@@ -880,8 +919,8 @@
                 <section class="cta-section">
                     <div class="container">
                         <div class="cta-content">
-                            <h2>Start Your Journey with Us Today!</h2>
-                            <p>Join hundreds of students who have transformed their careers</p>
+                            <h2>Be Part of Our First Batch!</h2>
+                            <p>Join KalaiNova Infotech as we launch. Get personalized attention, quality training, and affordable pricing</p>
                             <a href="#" class="btn btn-white">Get Started Now</a>
                         </div>
                     </div>
@@ -893,16 +932,16 @@
                             <div class="footer-brand">
                                 <div class="footer-logo">
                                     <span class="brand-icon">⚡</span>
-                                    <span>KalaiNova<span class="brand-accent">Tech</span></span>
+                                    <span>KalaiNova<span class="brand-accent">Infotech</span></span>
                                 </div>
-                                <p>Empowering future innovators with real-world tech experience</p>
+                                <p>Launching tech careers through quality IT training and internships</p>
                             </div>
                             <div class="footer-links">
                                 <div class="footer-column">
                                     <h4>Company</h4>
                                     <ul>
                                         <li><a href="#">About Us</a></li>
-                                        <li><a href="#">Internships</a></li>
+                                        <li><a href="#">Programs</a></li>
                                         <li><a href="#">Services</a></li>
                                         <li><a href="#">Contact</a></li>
                                     </ul>
@@ -911,7 +950,7 @@
                                     <h4>Programs</h4>
                                     <ul>
                                         <li><a href="#">Web Development</a></li>
-                                        <li><a href="#">Python Training</a></li>
+                                        <li><a href="#">Python Development</a></li>
                                         <li><a href="#">Java Development</a></li>
                                         <li><a href="#">Cloud Computing</a></li>
                                     </ul>
@@ -927,8 +966,8 @@
                             </div>
                         </div>
                         <div class="footer-bottom">
-                            <p>© 2025 KalaiNova Tech. Registered under MSME, Govt. of India (UDYAM-XXXXXXXX)</p>
-                            <p>Designed with ❤️ by KalaiNova Tech Team</p>
+                            <p>© 2025 KalaiNova Infotech. Registered under MSME, Govt. of India (UDYAM-XXXXXXXX)</p>
+                            <p>Designed with ❤️ by KalaiNova Infotech Team</p>
                         </div>
                     </div>
                 </footer>
@@ -940,12 +979,12 @@
                     <div class="container">
                         <div class="nav-brand">
                             <span class="brand-icon">⚡</span>
-                            <span class="brand-name">KalaiNova<span class="brand-accent">Tech</span></span>
+                            <span class="brand-name">KalaiNova<span class="brand-accent">Infotech</span></span>
                         </div>
                         <ul class="nav-menu">
                             <li><a href="#">Home</a></li>
                             <li><a href="#" style="color: var(--primary-blue);">About</a></li>
-                            <li><a href="#">Internships</a></li>
+                            <li><a href="#">Programs</a></li>
                             <li><a href="#">Services</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
@@ -954,7 +993,7 @@
 
                 <section class="page-header">
                     <div class="container">
-                        <h1 class="page-title">About <span class="gradient-text">KalaiNova Tech</span></h1>
+                        <h1 class="page-title">About <span class="gradient-text">KalaiNova Infotech</span></h1>
                         <p class="page-subtitle">Building future-ready professionals through skill-oriented IT training</p>
                     </div>
                 </section>
@@ -1011,12 +1050,12 @@
                     <div class="container">
                         <div style="max-width: 700px; margin: 0 auto; text-align: center;">
                             <span class="section-tag">From the Founder</span>
-                            <h2 class="section-title" style="margin-bottom: 1.5rem;">Why KalaiNova Tech?</h2>
+                            <h2 class="section-title" style="margin-bottom: 1.5rem;">Why KalaiNova Infotech?</h2>
                             <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1rem;">
-                                In today's rapidly evolving tech landscape, the gap between what students learn in classrooms and what the industry demands has never been wider. I founded KalaiNova Tech with a singular vision: to create a bridge that transforms eager learners into industry-ready professionals.
+                                In today's rapidly evolving tech landscape, the gap between what students learn in classrooms and what the industry demands has never been wider. I founded KalaiNova Infotech with a singular vision: to create a bridge that transforms eager learners into industry-ready professionals.
                             </p>
                             <p style="color: var(--text-secondary); line-height: 1.8;">
-                                At KalaiNova Tech, we don't just teach technology – we nurture problem-solvers, critical thinkers, and future leaders. Every program we offer is designed with one goal in mind: your success in the tech industry.
+                                At KalaiNova Infotech, we don't just teach technology – we nurture problem-solvers, critical thinkers, and future leaders. Join us at the beginning of our journey!
                             </p>
                         </div>
                     </div>
@@ -1024,42 +1063,8 @@
 
                 <footer class="footer">
                     <div class="container">
-                        <div class="footer-content">
-                            <div class="footer-brand">
-                                <div class="footer-logo">
-                                    <span class="brand-icon">⚡</span>
-                                    <span>KalaiNova<span class="brand-accent">Tech</span></span>
-                                </div>
-                                <p>Empowering future innovators with real-world tech experience</p>
-                            </div>
-                            <div class="footer-links">
-                                <div class="footer-column">
-                                    <h4>Company</h4>
-                                    <ul>
-                                        <li><a href="#">About Us</a></li>
-                                        <li><a href="#">Internships</a></li>
-                                        <li><a href="#">Services</a></li>
-                                    </ul>
-                                </div>
-                                <div class="footer-column">
-                                    <h4>Programs</h4>
-                                    <ul>
-                                        <li><a href="#">Web Development</a></li>
-                                        <li><a href="#">Python Training</a></li>
-                                        <li><a href="#">Java Development</a></li>
-                                    </ul>
-                                </div>
-                                <div class="footer-column">
-                                    <h4>Legal</h4>
-                                    <ul>
-                                        <li><a href="#">Verify Certificate</a></li>
-                                        <li><a href="#">Privacy Policy</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
                         <div class="footer-bottom">
-                            <p>© 2025 KalaiNova Tech. Registered under MSME, Govt. of India</p>
+                            <p>© 2025 KalaiNova Infotech. Registered under MSME, Govt. of India</p>
                         </div>
                     </div>
                 </footer>
@@ -1071,12 +1076,12 @@
                     <div class="container">
                         <div class="nav-brand">
                             <span class="brand-icon">⚡</span>
-                            <span class="brand-name">KalaiNova<span class="brand-accent">Tech</span></span>
+                            <span class="brand-name">KalaiNova<span class="brand-accent">Infotech</span></span>
                         </div>
                         <ul class="nav-menu">
                             <li><a href="#">Home</a></li>
                             <li><a href="#">About</a></li>
-                            <li><a href="#" style="color: var(--primary-blue);">Internships</a></li>
+                            <li><a href="#" style="color: var(--primary-blue);">Programs</a></li>
                             <li><a href="#">Services</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
@@ -1085,7 +1090,7 @@
 
                 <section class="page-header">
                     <div class="container">
-                        <h1 class="page-title">Internship & <span class="gradient-text">Training Programs</span></h1>
+                        <h1 class="page-title">Training <span class="gradient-text">Programs</span></h1>
                         <p class="page-subtitle">Transform your passion into expertise with industry-relevant skills</p>
                     </div>
                 </section>
@@ -1094,13 +1099,20 @@
                     <div class="container">
                         <div class="section-header">
                             <span class="section-tag">What You'll Learn</span>
-                            <h2 class="section-title">Technologies We Offer</h2>
+                            <h2 class="section-title">Available Programs</h2>
+                            <p style="color: var(--text-secondary); max-width: 700px; margin: 1rem auto 0;">
+                                All programs are 1-2 months long, include live projects, personal mentorship, and verified certification
+                            </p>
                         </div>
                         <div class="programs-grid">
                             <div class="program-card">
                                 <div class="program-icon">🌐</div>
                                 <h3>Web Development</h3>
                                 <p>Master frontend and backend technologies to build modern web applications</p>
+                                <div class="program-details">
+                                    <strong>Duration:</strong> 1-2 months<br>
+                                    <strong>Fee:</strong> ₹5,000-₹6,000
+                                </div>
                                 <div class="tech-tags">
                                     <span class="tech-tag">React</span>
                                     <span class="tech-tag">Node.js</span>
@@ -1111,6 +1123,10 @@
                                 <div class="program-icon">🐍</div>
                                 <h3>Python Development</h3>
                                 <p>Learn Python from basics to advanced data science applications</p>
+                                <div class="program-details">
+                                    <strong>Duration:</strong> 1-2 months<br>
+                                    <strong>Fee:</strong> ₹5,000-₹6,000
+                                </div>
                                 <div class="tech-tags">
                                     <span class="tech-tag">Django</span>
                                     <span class="tech-tag">Pandas</span>
@@ -1121,6 +1137,10 @@
                                 <div class="program-icon">☕</div>
                                 <h3>Java Development</h3>
                                 <p>Build enterprise-grade applications with Java and Spring</p>
+                                <div class="program-details">
+                                    <strong>Duration:</strong> 1-2 months<br>
+                                    <strong>Fee:</strong> ₹5,000-₹6,000
+                                </div>
                                 <div class="tech-tags">
                                     <span class="tech-tag">Spring Boot</span>
                                     <span class="tech-tag">Hibernate</span>
@@ -1131,6 +1151,10 @@
                                 <div class="program-icon">📱</div>
                                 <h3>Mobile App Development</h3>
                                 <p>Create native and cross-platform mobile applications</p>
+                                <div class="program-details">
+                                    <strong>Duration:</strong> 1-2 months<br>
+                                    <strong>Fee:</strong> ₹5,000-₹6,000
+                                </div>
                                 <div class="tech-tags">
                                     <span class="tech-tag">React Native</span>
                                     <span class="tech-tag">Flutter</span>
@@ -1141,6 +1165,10 @@
                                 <div class="program-icon">📊</div>
                                 <h3>Digital Marketing</h3>
                                 <p>Master digital marketing strategies and social media</p>
+                                <div class="program-details">
+                                    <strong>Duration:</strong> 1-2 months<br>
+                                    <strong>Fee:</strong> ₹5,000-₹6,000
+                                </div>
                                 <div class="tech-tags">
                                     <span class="tech-tag">SEO</span>
                                     <span class="tech-tag">Social Media</span>
@@ -1151,6 +1179,10 @@
                                 <div class="program-icon">☁️</div>
                                 <h3>Cloud Computing</h3>
                                 <p>Learn cloud platforms and DevOps practices</p>
+                                <div class="program-details">
+                                    <strong>Duration:</strong> 1-2 months<br>
+                                    <strong>Fee:</strong> ₹5,000-₹6,000
+                                </div>
                                 <div class="tech-tags">
                                     <span class="tech-tag">AWS</span>
                                     <span class="tech-tag">Docker</span>
@@ -1161,6 +1193,10 @@
                                 <div class="program-icon">🎨</div>
                                 <h3>UI/UX Design</h3>
                                 <p>Design beautiful, user-friendly interfaces</p>
+                                <div class="program-details">
+                                    <strong>Duration:</strong> 1-2 months<br>
+                                    <strong>Fee:</strong> ₹5,000-₹6,000
+                                </div>
                                 <div class="tech-tags">
                                     <span class="tech-tag">Figma</span>
                                     <span class="tech-tag">Adobe XD</span>
@@ -1171,6 +1207,10 @@
                                 <div class="program-icon">🤖</div>
                                 <h3>Data Science & AI</h3>
                                 <p>Explore machine learning and data analytics</p>
+                                <div class="program-details">
+                                    <strong>Duration:</strong> 1-2 months<br>
+                                    <strong>Fee:</strong> ₹5,000-₹6,000
+                                </div>
                                 <div class="tech-tags">
                                     <span class="tech-tag">ML</span>
                                     <span class="tech-tag">TensorFlow</span>
@@ -1207,6 +1247,11 @@
                                         <option>Web Development</option>
                                         <option>Python Development</option>
                                         <option>Java Development</option>
+                                        <option>Mobile App Development</option>
+                                        <option>Digital Marketing</option>
+                                        <option>Cloud Computing</option>
+                                        <option>UI/UX Design</option>
+                                        <option>Data Science & AI</option>
                                     </select>
                                 </div>
                                 <button type="submit" class="btn btn-primary btn-block">Submit Application</button>
@@ -1218,7 +1263,7 @@
                 <footer class="footer">
                     <div class="container">
                         <div class="footer-bottom">
-                            <p>© 2025 KalaiNova Tech. Registered under MSME, Govt. of India</p>
+                            <p>© 2025 KalaiNova Infotech. Registered under MSME, Govt. of India</p>
                         </div>
                     </div>
                 </footer>
@@ -1230,12 +1275,12 @@
                     <div class="container">
                         <div class="nav-brand">
                             <span class="brand-icon">⚡</span>
-                            <span class="brand-name">KalaiNova<span class="brand-accent">Tech</span></span>
+                            <span class="brand-name">KalaiNova<span class="brand-accent">Infotech</span></span>
                         </div>
                         <ul class="nav-menu">
                             <li><a href="#">Home</a></li>
                             <li><a href="#">About</a></li>
-                            <li><a href="#">Internships</a></li>
+                            <li><a href="#">Programs</a></li>
                             <li><a href="#" style="color: var(--primary-blue);">Services</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
@@ -1339,7 +1384,7 @@
                 <footer class="footer">
                     <div class="container">
                         <div class="footer-bottom">
-                            <p>© 2025 KalaiNova Tech. Registered under MSME, Govt. of India</p>
+                            <p>© 2025 KalaiNova Infotech. Registered under MSME, Govt. of India</p>
                         </div>
                     </div>
                 </footer>
@@ -1351,12 +1396,12 @@
                     <div class="container">
                         <div class="nav-brand">
                             <span class="brand-icon">⚡</span>
-                            <span class="brand-name">KalaiNova<span class="brand-accent">Tech</span></span>
+                            <span class="brand-name">KalaiNova<span class="brand-accent">Infotech</span></span>
                         </div>
                         <ul class="nav-menu">
                             <li><a href="#">Home</a></li>
                             <li><a href="#">About</a></li>
-                            <li><a href="#">Internships</a></li>
+                            <li><a href="#">Programs</a></li>
                             <li><a href="#">Services</a></li>
                             <li><a href="#" style="color: var(--primary-blue);">Verify</a></li>
                         </ul>
@@ -1366,7 +1411,7 @@
                 <section class="page-header">
                     <div class="container">
                         <h1 class="page-title">Certificate <span class="gradient-text">Verification</span></h1>
-                        <p class="page-subtitle">Verify the authenticity of KalaiNova Tech certificates</p>
+                        <p class="page-subtitle">Verify the authenticity of KalaiNova Infotech certificates</p>
                     </div>
                 </section>
 
@@ -1391,12 +1436,12 @@
 
                         <div class="cert-mockup">
                             <div class="cert-header">
-                                ⚡ KalaiNova Tech
+                                ⚡ KalaiNova Infotech
                             </div>
                             <div style="margin: 1.5rem 0; padding: 1.5rem; border-top: 2px solid var(--border-color); border-bottom: 2px solid var(--border-color);">
                                 <div style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.5rem;">This is to certify that</div>
                                 <div style="font-size: 1.5rem; font-weight: 700; color: var(--primary-blue); margin-bottom: 1rem;">Student Name</div>
-                                <div style="font-size: 0.875rem; color: var(--text-secondary);">has successfully completed the internship program in</div>
+                                <div style="font-size: 0.875rem; color: var(--text-secondary);">has successfully completed the program in</div>
                                 <div style="font-size: 1.25rem; font-weight: 600; margin-top: 0.5rem;">Web Development</div>
                             </div>
                             <div class="cert-id">
@@ -1412,7 +1457,7 @@
                 <footer class="footer">
                     <div class="container">
                         <div class="footer-bottom">
-                            <p>© 2025 KalaiNova Tech. Registered under MSME, Govt. of India</p>
+                            <p>© 2025 KalaiNova Infotech. Registered under MSME, Govt. of India</p>
                         </div>
                     </div>
                 </footer>
@@ -1424,12 +1469,12 @@
                     <div class="container">
                         <div class="nav-brand">
                             <span class="brand-icon">⚡</span>
-                            <span class="brand-name">KalaiNova<span class="brand-accent">Tech</span></span>
+                            <span class="brand-name">KalaiNova<span class="brand-accent">Infotech</span></span>
                         </div>
                         <ul class="nav-menu">
                             <li><a href="#">Home</a></li>
                             <li><a href="#">About</a></li>
-                            <li><a href="#">Internships</a></li>
+                            <li><a href="#">Programs</a></li>
                             <li><a href="#">Services</a></li>
                             <li><a href="#" style="color: var(--primary-blue);">Contact</a></li>
                         </ul>
@@ -1449,7 +1494,7 @@
                             <div class="highlight-card">
                                 <div class="highlight-icon">📧</div>
                                 <h3>Email</h3>
-                                <p style="color: var(--primary-blue); font-weight: 600;">info@kalainovatech.in</p>
+                                <p style="color: var(--primary-blue); font-weight: 600;">info@kalainovainfotech.in</p>
                                 <p style="font-size: 0.875rem; margin-top: 0.5rem;">We respond within 24 hours</p>
                             </div>
                             <div class="highlight-card">
@@ -1493,7 +1538,8 @@
                                         <option value="">Select Subject</option>
                                         <option>Internship Inquiry</option>
                                         <option>Service Request</option>
-                                        <option>Partnership</option>
+                                        <option>Partnership Opportunity</option>
+                                        <option>General Question</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
@@ -1509,7 +1555,7 @@
                 <footer class="footer">
                     <div class="container">
                         <div class="footer-bottom">
-                            <p>© 2025 KalaiNova Tech. Registered under MSME, Govt. of India</p>
+                            <p>© 2025 KalaiNova Infotech. Registered under MSME, Govt. of India</p>
                         </div>
                     </div>
                 </footer>
